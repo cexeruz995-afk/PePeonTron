@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="PePeonTron – The #1 Pepe Meme Coin on TRON. Listed on Binance Alpha & MEXC. Buy PEPEONTRON, connect wallet, join the biggest meme movement on TRON blockchain. $10B target 🚀">
+<meta name="keywords" content="PePeonTron, PEPEONTRON, Pepe on Tron, TRON meme coin, PePeonTron price, buy PePeonTron, PEPEONTRON token, SunPump meme, TRON Pepe, Binance Alpha PePeonTron, MEXC PePeonTron, TRC-20 meme coin">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="PePeonTron 🐸 – The King of TRON Meme Coins | Binance Alpha Listed">
+<meta property="og:description" content="PePeonTron is live on Binance Alpha & MEXC. $60M+ market cap. Join the TRON meme revolution. $10B target incoming 🚀🐸">
+<meta property="og:type" content="website">
+<title>PePeonTron 🐸 | #1 Pepe Meme Coin on TRON | Binance Alpha Listed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2300c853'/%3E%3Cellipse cx='32' cy='36' rx='20' ry='16' fill='%231b5e20'/%3E%3Ccircle cx='24' cy='26' r='6' fill='white'/%3E%3Ccircle cx='40' cy='26' r='6' fill='white'/%3E%3Ccircle cx='25' cy='27' r='3' fill='%23111'/%3E%3Ccircle cx='41' cy='27' r='3' fill='%23111'/%3E%3Cellipse cx='32' cy='40' rx='10' ry='5' fill='%2300e676'/%3E%3C/svg%3E">
+<style>
+:root {
+  --green: #00c853;
+  --green-bright: #00e676;
+  --green-dark: #1b5e20;
+  --lime: #aeea00;
+  --yellow: #ffd600;
+  --orange: #ff6d00;
+  --red: #ff1744;
+  --bg: #050f05;
+  --bg2: #071207;
+  --surface: #0a1a0a;
+  --panel: #0d200d;
+  --border: rgba(0,200,83,0.2);
+  --border2: rgba(0,230,118,0.3);
+  --white: #f9fff9;
+  --dim: #5a8c5a;
+  --muted: #2d4a2d;
+  --glow: 0 0 60px rgba(0,200,83,0.4);
+  --glow-bright: 0 0 80px rgba(0,230,118,0.5);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+::selection { background: rgba(0,200,83,0.35); }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--green); border-radius: 2px; }
+
+.bg-layer {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;
+}
+
+.bg-stars {
+  position: absolute; inset: 0;
+}
+
+.bg-glow-1 {
+  position: absolute; width: 700px; height: 700px;
+  top: -200px; left: -200px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,200,83,0.08) 0%, transparent 70%);
+  animation: glowDrift 10s ease-in-out infinite;
+}
+.bg-glow-2 {
+  position: absolute; width: 500px; height: 500px;
+  bottom: -100px; right: -100px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(174,234,0,0.06) 0%, transparent 70%);
+  animation: glowDrift 8s ease-in-out infinite reverse;
+}
+.bg-glow-3 {
+  position: absolute; width: 300px; height: 300px;
+  top: 40%; left: 50%; transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,200,83,0.05) 0%, transparent 70%);
+}
+
+@keyframes glowDrift {
+  0%,100% { transform: translate(0,0) scale(1); }
+  50% { transform: translate(40px,-40px) scale(1.1); }
+}
+
+.rain-char {
+  position: absolute;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--green);
+  opacity: 0;
+  animation: rainFall linear infinite;
+  user-select: none;
+}
+
+@keyframes rainFall {
+  0% { transform: translateY(-20px); opacity: 0; }
+  10% { opacity: 0.4; }
+  80% { opacity: 0.15; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 500;
+  height: 68px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5%;
+  background: rgba(5,15,5,0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-logo {
+  display: flex; align-items: center; gap: 10px;
+  font-family: 'Bangers', cursive;
+  font-size: 1.8rem; letter-spacing: 0.06em;
+  text-decoration: none;
+}
+
+.logo-frog { font-size: 1.9rem; filter: drop-shadow(0 0 8px rgba(0,200,83,0.6)); }
+
+.logo-pepe { color: var(--green); }
+.logo-on { color: var(--white); font-size: 1.2rem; }
+.logo-tron { color: var(--lime); }
+
+.nav-links {
+  display: flex; align-items: center; gap: 28px; list-style: none;
+}
+
+.nav-links a {
+  font-size: 0.9rem; font-weight: 700; letter-spacing: 0.05em;
+  color: var(--dim); text-decoration: none; text-transform: uppercase;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--green-bright); }
+
+.nav-right { display: flex; align-items: center; gap: 10px; }
+
+.nav-price-badge {
+  display: flex; align-items: center; gap: 6px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem; color: var(--green-bright);
+  background: rgba(0,200,83,0.08);
+  border: 1px solid var(--border);
+  padding: 7px 14px; border-radius: 6px;
+}
+
+.price-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--green-bright);
+  animation: pricePulse 1.5s ease infinite;
+}
+
+@keyframes pricePulse { 0%,100%{transform:scale(1);opacity:1;} 50%{transform:scale(1.6);opacity:0.4;} }
+
+.btn-nav-buy {
+  font-family: 'Bangers', cursive;
+  font-size: 1.1rem; letter-spacing: 0.08em;
+  padding: 8px 22px;
+  background: linear-gradient(135deg, var(--green), var(--lime));
+  color: #000; border: none; border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0,200,83,0.35);
+  transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+}
+.btn-nav-buy:hover { transform: translateY(-2px) scale(1.04); box-shadow: 0 0 36px rgba(0,200,83,0.6); filter: brightness(1.1); }
+
+.hero {
+  position: relative; z-index: 1;
+  min-height: 100vh;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 80px 5% 60px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-top-badges {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  flex-wrap: wrap; margin-bottom: 28px;
+  animation: fadeUp 0.7s ease both;
+}
+
+.badge {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 0.78rem; font-weight: 800;
+  padding: 6px 14px; border-radius: 100px;
+  letter-spacing: 0.04em; white-space: nowrap;
+}
+
+.badge-binance {
+  background: rgba(243,186,47,0.12);
+  border: 1px solid rgba(243,186,47,0.3);
+  color: #f3ba2f;
+}
+
+.badge-mexc {
+  background: rgba(0,200,83,0.1);
+  border: 1px solid var(--border);
+  color: var(--green-bright);
+}
+
+.badge-tron {
+  background: rgba(255,0,0,0.08);
+  border: 1px solid rgba(255,0,0,0.2);
+  color: #ff5555;
+}
+
+.badge-sunpump {
+  background: rgba(255,109,0,0.1);
+  border: 1px solid rgba(255,109,0,0.25);
+  color: #ff9800;
+}
+
+.hero-pepe-wrap {
+  position: relative;
+  margin: 0 auto 24px;
+  width: 220px; height: 220px;
+  animation: fadeUp 0.7s 0.05s ease both;
+}
+
+.hero-pepe-glow {
+  position: absolute; inset: -30px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,200,83,0.25) 0%, transparent 70%);
+  animation: auraBreath 3s ease-in-out infinite;
+}
+
+@keyframes auraBreath {
+  0%,100% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.15); opacity: 1; }
+}
+
+.hero-pepe-rings {
+  position: absolute; inset: 0;
+  border-radius: 50%;
+}
+
+.hero-pepe-rings::before, .hero-pepe-rings::after {
+  content: '';
+  position: absolute; border-radius: 50%;
+  border: 1px solid rgba(0,200,83,0.2);
+  animation: ringExpand 3s ease-out infinite;
+}
+.hero-pepe-rings::before { inset: -20px; animation-delay: 0s; }
+.hero-pepe-rings::after { inset: -40px; animation-delay: 1s; }
+
+@keyframes ringExpand {
+  0% { opacity: 0.8; transform: scale(0.9); }
+  100% { opacity: 0; transform: scale(1.3); }
+}
+
+.hero-pepe-svg {
+  width: 220px; height: 220px;
+  filter: drop-shadow(0 0 30px rgba(0,200,83,0.5));
+  animation: pepeFloat 4s ease-in-out infinite;
+  position: relative; z-index: 1;
+}
+
+@keyframes pepeFloat {
+  0%,100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-14px) rotate(2deg); }
+}
+
+.hero-moon-badge {
+  position: absolute;
+  top: 10px; right: -20px;
+  background: var(--panel);
+  border: 1px solid rgba(255,214,0,0.3);
+  border-radius: 10px;
+  padding: 8px 12px;
+  display: flex; flex-direction: column; align-items: center;
+  animation: floatBadge 3s ease-in-out infinite;
+  z-index: 2;
+}
+
+.hero-moon-badge .icon { font-size: 1.3rem; }
+.hero-moon-badge .txt {
+  font-family: 'Bangers', cursive;
+  font-size: 0.9rem; color: var(--yellow); letter-spacing: 0.06em;
+  line-height: 1;
+}
+
+.hero-binance-badge {
+  position: absolute;
+  bottom: 10px; left: -30px;
+  background: var(--panel);
+  border: 1px solid rgba(243,186,47,0.25);
+  border-radius: 10px;
+  padding: 8px 14px;
+  z-index: 2;
+  animation: floatBadge 3.5s ease-in-out infinite reverse;
+}
+
+.hero-binance-badge .label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.58rem; color: var(--dim); letter-spacing: 0.1em; text-transform: uppercase;
+}
+.hero-binance-badge .val {
+  font-family: 'Bangers', cursive;
+  font-size: 1rem; color: #f3ba2f; letter-spacing: 0.05em;
+}
+
+@keyframes floatBadge {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.hero-title {
+  font-family: 'Bangers', cursive;
+  font-size: clamp(3.5rem, 12vw, 9.5rem);
+  letter-spacing: 0.04em;
+  line-height: 0.9;
+  margin-bottom: 20px;
+  animation: fadeUp 0.7s 0.1s ease both;
+}
+
+.ht-pepe {
+  display: block;
+  color: var(--green-bright);
+  filter: drop-shadow(0 0 20px rgba(0,200,83,0.5));
+  -webkit-text-stroke: 2px rgba(0,100,40,0.4);
+}
+
+.ht-on {
+  display: block;
+  color: var(--white);
+  font-size: 0.35em;
+  letter-spacing: 0.2em;
+}
+
+.ht-tron {
+  display: block;
+  background: linear-gradient(90deg, var(--red), #ff6d00, var(--yellow));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 20px rgba(255,50,0,0.3));
+}
+
+.hero-desc {
+  font-size: clamp(1rem, 2.5vw, 1.35rem);
+  font-weight: 700; color: var(--dim);
+  max-width: 540px; margin: 0 auto 36px;
+  line-height: 1.55;
+  animation: fadeUp 0.7s 0.15s ease both;
+}
+
+.hero-desc strong { color: var(--green-bright); }
+
+.hero-live-stats {
+  display: flex; align-items: center; justify-content: center; gap: 0;
+  margin-bottom: 36px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  max-width: 580px; width: 100%;
+  animation: fadeUp 0.7s 0.2s ease both;
+}
+
+.hls-item {
+  flex: 1; padding: 18px 16px; text-align: center;
+  border-right: 1px solid var(--border);
+  position: relative; overflow: hidden;
+  transition: background 0.2s;
+}
+.hls-item:last-child { border-right: none; }
+.hls-item:hover { background: rgba(0,200,83,0.04); }
+
+.hls-val {
+  font-family: 'Bangers', cursive;
+  font-size: 1.5rem; letter-spacing: 0.04em;
+  color: var(--green-bright); margin-bottom: 2px;
+}
+
+.hls-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--dim);
+}
+
+.hero-cta-group {
+  display: flex; flex-direction: column; align-items: center; gap: 14px;
+  animation: fadeUp 0.7s 0.25s ease both;
+  width: 100%; max-width: 520px;
+}
+
+.btn-connect-big {
+  width: 100%;
+  font-family: 'Bangers', cursive;
+  font-size: 1.7rem; letter-spacing: 0.08em;
+  padding: 20px 40px;
+  background: linear-gradient(135deg, #00c853, #aeea00, #00e676);
+  background-size: 200% 200%;
+  animation: gradShift 3s ease infinite;
+  color: #000; border: none; border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 60px rgba(0,200,83,0.45), 0 8px 30px rgba(0,0,0,0.3);
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+  position: relative; overflow: hidden;
+}
+
+.btn-connect-big::before {
+  content: ''; position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent);
+  transform: translateX(-110%) skewX(-20deg);
+  transition: transform 0.5s;
+}
+
+.btn-connect-big:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 0 100px rgba(0,200,83,0.7), 0 12px 40px rgba(0,0,0,0.4);
+}
+.btn-connect-big:hover::before { transform: translateX(110%) skewX(-20deg); }
+.btn-connect-big:active { transform: translateY(-1px); }
+.btn-connect-big span { position: relative; z-index: 1; }
+
+@keyframes gradShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.btn-swap {
+  width: 100%;
+  font-family: 'Bangers', cursive;
+  font-size: 1.3rem; letter-spacing: 0.06em;
+  padding: 15px 32px;
+  background: transparent;
+  color: var(--green-bright);
+  border: 2px solid var(--border2);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+}
+.btn-swap:hover {
+  background: rgba(0,200,83,0.08);
+  border-color: var(--green-bright);
+  transform: translateY(-2px);
+}
+
+.hero-trust-row {
+  display: flex; align-items: center; justify-content: center; gap: 20px;
+  flex-wrap: wrap;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.68rem; letter-spacing: 0.08em; color: var(--dim);
+  animation: fadeUp 0.7s 0.32s ease both;
+}
+
+.htr-item { display: flex; align-items: center; gap: 5px; }
+.htr-icon { font-size: 0.85rem; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.marquee-wrap {
+  position: relative; z-index: 1;
+  background: var(--green);
+  overflow: hidden;
+  padding: 10px 0;
+  border-top: 2px solid var(--lime);
+  border-bottom: 2px solid var(--lime);
+}
+
+.marquee-track {
+  display: flex; gap: 0;
+  animation: marqueeRoll 20s linear infinite;
+  width: max-content;
+}
+
+.marquee-item {
+  display: flex; align-items: center; gap: 8px;
+  padding: 0 32px;
+  font-family: 'Bangers', cursive;
+  font-size: 1.1rem; letter-spacing: 0.08em;
+  color: #000; white-space: nowrap;
+  border-right: 2px solid rgba(0,0,0,0.2);
+}
+
+.marquee-item .frog { font-size: 1.1rem; }
+
+@keyframes marqueeRoll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+section { position: relative; z-index: 1; }
+
+.why-section { padding: 100px 5%; }
+.why-inner { max-width: 1200px; margin: 0 auto; }
+
+.sec-head { text-align: center; margin-bottom: 64px; }
+
+.sec-tag {
+  display: inline-block;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--green); margin-bottom: 12px;
+}
+
+.sec-title {
+  font-family: 'Bangers', cursive;
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  letter-spacing: 0.04em; line-height: 1;
+  color: var(--white); margin-bottom: 12px;
+}
+
+.sec-title .g { color: var(--green-bright); }
+
+.sec-sub {
+  font-size: 1rem; font-weight: 600; color: var(--dim);
+  max-width: 480px; margin: 0 auto; line-height: 1.65;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.why-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px 26px;
+  position: relative; overflow: hidden;
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.why-card::before {
+  content: ''; position: absolute;
+  top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--green), var(--lime), transparent);
+  transform: scaleX(0); transition: transform 0.4s;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border2);
+  box-shadow: 0 20px 50px rgba(0,200,83,0.1);
+}
+.why-card:hover::before { transform: scaleX(1); }
+
+.wc-num {
+  font-family: 'Bangers', cursive;
+  font-size: 3.5rem; letter-spacing: 0.04em;
+  color: rgba(0,200,83,0.08); margin-bottom: 14px;
+  line-height: 1;
+}
+
+.wc-icon { font-size: 2.4rem; margin-bottom: 14px; display: block; }
+
+.wc-title {
+  font-family: 'Bangers', cursive;
+  font-size: 1.5rem; letter-spacing: 0.04em; color: var(--white);
+  margin-bottom: 10px;
+}
+
+.wc-desc {
+  font-size: 0.92rem; font-weight: 600; color: var(--dim); line-height: 1.65;
+}
+
+.wc-highlight {
+  display: inline-block; margin-top: 12px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem; color: var(--green-bright);
+  background: rgba(0,200,83,0.08);
+  border: 1px solid var(--border);
+  padding: 4px 10px; border-radius: 4px;
+}
+
+.tokenomics-section {
+  padding: 80px 5% 100px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.tokenomics-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
+  align-items: center;
+}
+
+.token-donut-wrap {
+  display: flex; flex-direction: column; align-items: center;
+}
+
+.donut-chart {
+  width: 260px; height: 260px;
+  position: relative; margin-bottom: 28px;
+}
+
+.donut-svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+
+.donut-center {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.dc-icon { font-size: 2.5rem; }
+.dc-val {
+  font-family: 'Bangers', cursive;
+  font-size: 1.4rem; letter-spacing: 0.04em; color: var(--green-bright);
+}
+.dc-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem; letter-spacing: 0.1em; color: var(--dim);
+}
+
+.donut-legend {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  width: 100%;
+}
+
+.dl-item {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 0.85rem; font-weight: 700;
+}
+
+.dl-dot {
+  width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+}
+
+.dl-name { color: var(--dim); }
+.dl-pct { color: var(--white); margin-left: auto; font-family: 'Space Mono', monospace; font-size: 0.75rem; }
+
+.token-info { }
+
+.token-info-rows { margin: 32px 0; }
+
+.tir {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(0,200,83,0.08);
+}
+.tir:last-child { border-bottom: none; }
+
+.tir-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem; letter-spacing: 0.1em; color: var(--dim);
+  text-transform: uppercase;
+}
+
+.tir-val {
+  font-family: 'Bangers', cursive;
+  font-size: 1.1rem; letter-spacing: 0.04em; color: var(--white);
+}
+
+.tir-val.green { color: var(--green-bright); }
+.tir-val.yellow { color: var(--yellow); }
+
+.contract-box {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 18px;
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 24px;
+}
+
+.contract-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--dim);
+  display: block; margin-bottom: 4px;
+}
+
+.contract-addr {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem; color: var(--green-bright);
+  word-break: break-all; flex: 1;
+}
+
+.copy-btn {
+  background: rgba(0,200,83,0.08);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 10px;
+  color: var(--green); cursor: pointer; font-size: 0.85rem;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+.copy-btn:hover { background: rgba(0,200,83,0.15); }
+
+.listings-section { padding: 80px 5% 100px; }
+
+.listings-inner { max-width: 1200px; margin: 0 auto; }
+
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px; margin-top: 64px;
+}
+
+.listing-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+  position: relative; overflow: hidden;
+}
+
+.listing-card::after {
+  content: ''; position: absolute;
+  bottom: 0; left: 0; right: 0; height: 2px;
+  transform: scaleX(0); transition: transform 0.3s;
+}
+
+.listing-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border2);
+  box-shadow: 0 12px 40px rgba(0,200,83,0.1);
+}
+.listing-card:hover::after { transform: scaleX(1); }
+
+.lc-binance::after { background: var(--yellow); }
+.lc-mexc::after { background: var(--green); }
+.lc-lbank::after { background: #1e88e5; }
+.lc-sunswap::after { background: var(--orange); }
+
+.lc-logo { font-size: 2.4rem; margin-bottom: 14px; display: block; }
+
+.lc-name {
+  font-family: 'Bangers', cursive;
+  font-size: 1.3rem; letter-spacing: 0.04em; color: var(--white);
+  margin-bottom: 6px;
+}
+
+.lc-type {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.62rem; letter-spacing: 0.1em; color: var(--dim);
+  text-transform: uppercase; margin-bottom: 12px;
+}
+
+.lc-badge {
+  display: inline-block;
+  font-size: 0.7rem; font-weight: 800;
+  padding: 4px 10px; border-radius: 100px;
+}
+
+.badge-live-g { background: rgba(0,200,83,0.12); color: var(--green-bright); border: 1px solid var(--border); }
+.badge-live-y { background: rgba(255,214,0,0.12); color: var(--yellow); border: 1px solid rgba(255,214,0,0.2); }
+.badge-live-b { background: rgba(30,136,229,0.12); color: #64b5f6; border: 1px solid rgba(30,136,229,0.2); }
+
+.roadmap-section {
+  padding: 80px 5% 100px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+.roadmap-inner { max-width: 900px; margin: 0 auto; }
+
+.rm-track {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+  position: relative; margin-top: 64px;
+}
+
+.rm-track::before {
+  content: ''; position: absolute;
+  top: 32px; left: 12.5%; right: 12.5%; height: 2px;
+  background: linear-gradient(90deg, var(--green), var(--lime), var(--green-dark));
+}
+
+.rm-item { text-align: center; padding: 0 12px; position: relative; }
+
+.rm-node {
+  width: 64px; height: 64px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 18px;
+  font-size: 1.6rem;
+  position: relative; z-index: 1;
+  transition: transform 0.2s;
+}
+.rm-item:hover .rm-node { transform: scale(1.1); }
+
+.rm-node-done {
+  background: linear-gradient(135deg, var(--green), var(--lime));
+  box-shadow: 0 0 24px rgba(0,200,83,0.45);
+}
+
+.rm-node-active {
+  background: var(--surface);
+  border: 2px solid var(--green-bright);
+  box-shadow: 0 0 24px rgba(0,200,83,0.4);
+}
+
+.rm-node-upcoming {
+  background: var(--panel);
+  border: 1px solid var(--muted);
+}
+
+.rm-phase {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem; letter-spacing: 0.15em;
+  text-transform: uppercase; margin-bottom: 6px;
+}
+.rm-phase.done { color: var(--green); }
+.rm-phase.active { color: var(--yellow); }
+.rm-phase.upcoming { color: var(--dim); }
+
+.rm-title {
+  font-family: 'Bangers', cursive;
+  font-size: 1rem; letter-spacing: 0.04em; color: var(--white);
+  margin-bottom: 6px;
+}
+
+.rm-desc {
+  font-size: 0.78rem; font-weight: 600; color: var(--dim); line-height: 1.6;
+}
+
+.community-section { padding: 80px 5% 100px; }
+
+.community-inner { max-width: 1200px; margin: 0 auto; }
+
+.social-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 16px; margin-top: 64px;
+}
+
+.social-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px 20px; text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+  text-decoration: none;
+}
+.social-card:hover { transform: translateY(-4px); border-color: var(--border2); }
+
+.sc-icon { font-size: 2.2rem; margin-bottom: 12px; display: block; }
+.sc-name {
+  font-family: 'Bangers', cursive;
+  font-size: 1.2rem; letter-spacing: 0.04em; color: var(--white); margin-bottom: 4px;
+}
+.sc-followers { font-family: 'Space Mono', monospace; font-size: 0.7rem; color: var(--dim); }
+
+.cta-section {
+  padding: 140px 5%;
+  text-align: center;
+  position: relative; overflow: hidden;
+}
+
+.cta-bg-frog {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(200px, 40vw, 450px);
+  opacity: 0.04;
+  pointer-events: none; user-select: none;
+  animation: ctaFrogBreath 4s ease-in-out infinite;
+  line-height: 1;
+}
+
+@keyframes ctaFrogBreath {
+  0%,100% { transform: translate(-50%,-50%) scale(1); }
+  50% { transform: translate(-50%,-55%) scale(1.05); }
+}
+
+.cta-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--green); margin-bottom: 16px; display: block; position: relative;
+}
+
+.cta-title {
+  font-family: 'Bangers', cursive;
+  font-size: clamp(3rem, 9vw, 8rem);
+  letter-spacing: 0.04em; line-height: 0.95;
+  margin-bottom: 20px; position: relative;
+}
+
+.cta-title .line1 { display: block; color: var(--white); }
+.cta-title .line2 {
+  display: block;
+  background: linear-gradient(90deg, var(--green-bright), var(--lime));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 20px rgba(0,200,83,0.4));
+}
+
+.cta-sub {
+  font-size: 1.1rem; font-weight: 700; color: var(--dim);
+  max-width: 500px; margin: 0 auto 48px; line-height: 1.65; position: relative;
+}
+
+.cta-btns {
+  display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap;
+  position: relative;
+}
+
+.btn-cta-main {
+  font-family: 'Bangers', cursive;
+  font-size: 1.6rem; letter-spacing: 0.08em;
+  padding: 18px 52px;
+  background: linear-gradient(135deg, var(--green), var(--lime));
+  color: #000; border: none; border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 60px rgba(0,200,83,0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex; align-items: center; gap: 10px;
+}
+.btn-cta-main:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 0 100px rgba(0,200,83,0.65); }
+
+.btn-cta-sec {
+  font-family: 'Bangers', cursive;
+  font-size: 1.4rem; letter-spacing: 0.06em;
+  padding: 16px 36px;
+  background: transparent;
+  color: var(--green-bright);
+  border: 2px solid var(--border2);
+  border-radius: 12px; cursor: pointer;
+  transition: all 0.2s;
+  display: flex; align-items: center; gap: 8px;
+}
+.btn-cta-sec:hover { background: rgba(0,200,83,0.08); transform: translateY(-2px); }
+
+footer {
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  padding: 52px 5% 32px;
+  position: relative; z-index: 1;
+}
+
+.footer-grid {
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px; margin-bottom: 44px;
+}
+
+.footer-logo-row {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 14px;
+  font-family: 'Bangers', cursive; font-size: 1.5rem; letter-spacing: 0.06em;
+  text-decoration: none;
+}
+
+.footer-desc {
+  font-size: 0.875rem; font-weight: 600; color: var(--dim);
+  line-height: 1.7; max-width: 270px;
+}
+
+.footer-col-title {
+  font-family: 'Bangers', cursive;
+  font-size: 1.1rem; letter-spacing: 0.06em; color: var(--white); margin-bottom: 18px;
+}
+
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 10px; }
+.footer-links a {
+  font-size: 0.875rem; font-weight: 600; color: var(--dim); text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--green-bright); }
+
+.footer-bottom {
+  display: flex; align-items: center; justify-content: space-between;
+  padding-top: 24px; border-top: 1px solid var(--border);
+  flex-wrap: wrap; gap: 14px;
+}
+
+.footer-copy {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.68rem; letter-spacing: 0.08em; color: var(--muted);
+}
+
+.footer-socials { display: flex; gap: 8px; }
+.fsoc {
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; color: var(--dim); font-size: 0.9rem; text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+.fsoc:hover { border-color: var(--green-bright); color: var(--green-bright); }
+
+.modal-overlay {
+  position: fixed; inset: 0; z-index: 1000;
+  background: rgba(5,15,5,0.93);
+  backdrop-filter: blur(20px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px;
+  opacity: 0; pointer-events: none; transition: opacity 0.3s;
+}
+.modal-overlay.open { opacity: 1; pointer-events: all; }
+
+.modal {
+  background: var(--panel);
+  border: 1px solid var(--border2);
+  border-radius: 20px;
+  width: 100%; max-width: 460px;
+  position: relative; overflow: hidden;
+  box-shadow: 0 60px 120px rgba(0,0,0,0.7), var(--glow);
+  transform: scale(0.96) translateY(16px); transition: transform 0.3s;
+}
+.modal-overlay.open .modal { transform: scale(1) translateY(0); }
+
+.modal-top {
+  padding: 28px 32px 24px;
+  background: linear-gradient(135deg, rgba(0,200,83,0.08), rgba(174,234,0,0.04));
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+.modal-top::before {
+  content: ''; position: absolute;
+  top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--green), var(--lime), transparent);
+}
+
+.modal-close {
+  position: absolute; top: 16px; right: 16px;
+  width: 32px; height: 32px;
+  background: rgba(0,0,0,0.3); border: 1px solid var(--border);
+  border-radius: 8px; color: var(--dim); cursor: pointer; font-size: 1rem;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.2s;
+}
+.modal-close:hover { border-color: var(--red); color: var(--red); }
+
+.modal-frog-row {
+  display: flex; align-items: center; gap: 14px; margin-bottom: 4px;
+}
+
+.modal-frog { font-size: 2.4rem; }
+
+.modal-title {
+  font-family: 'Bangers', cursive;
+  font-size: 1.8rem; letter-spacing: 0.06em; color: var(--white);
+}
+
+.modal-subtitle {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.68rem; letter-spacing: 0.1em; color: var(--dim);
+}
+
+.modal-reward {
+  display: flex; align-items: center; gap: 8px;
+  background: rgba(0,200,83,0.08); border: 1px solid var(--border);
+  border-radius: 8px; padding: 10px 14px; margin-top: 14px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem; color: var(--green-bright); letter-spacing: 0.06em;
+}
+
+.mr-icon { font-size: 1rem; }
+
+.modal-wallets { padding: 22px 32px; display: flex; flex-direction: column; gap: 8px; }
+
+.modal-wallet {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px; cursor: pointer;
+  transition: all 0.2s;
+}
+.modal-wallet:hover {
+  border-color: var(--green-bright);
+  background: rgba(0,200,83,0.05);
+  transform: translateX(6px);
+}
+
+.mw-left { display: flex; align-items: center; gap: 12px; }
+.mw-icon { font-size: 1.5rem; }
+.mw-name {
+  font-family: 'Bangers', cursive;
+  font-size: 1rem; letter-spacing: 0.04em; color: var(--white);
+}
+.mw-type {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem; color: var(--dim); letter-spacing: 0.06em;
+}
+
+.mw-arrow { color: var(--dim); transition: transform 0.2s, color 0.2s; }
+.modal-wallet:hover .mw-arrow { transform: translateX(4px); color: var(--green-bright); }
+
+.modal-footer {
+  padding: 0 32px 24px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem; letter-spacing: 0.06em; color: var(--dim);
+  text-align: center; line-height: 1.7;
+}
+
+.scroll-reveal {
+  opacity: 0; transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.scroll-reveal.visible { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 1000px) {
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .listings-grid { grid-template-columns: repeat(2, 1fr); }
+  .tokenomics-inner { grid-template-columns: 1fr; }
+  .rm-track { grid-template-columns: repeat(2, 1fr); }
+  .rm-track::before { display: none; }
+  .social-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+}
+
+@media (max-width: 640px) {
+  nav { padding: 0 4%; }
+  .nav-links { display: none; }
+  .hero { padding: 80px 4% 60px; }
+  .why-grid { grid-template-columns: 1fr; }
+  .listings-grid { grid-template-columns: 1fr 1fr; }
+  .social-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .hero-live-stats { flex-direction: column; }
+  .hls-item { border-right: none; border-bottom: 1px solid var(--border); }
+  .hls-item:last-child { border-bottom: none; }
+  .modal-wallets { padding: 18px 20px; }
+  .modal-top { padding: 22px 20px 18px; }
+  .modal-footer { padding: 0 20px 20px; }
+}
+</style>
+</head>
+<body>
+
+<div class="bg-layer">
+  <div class="bg-stars" id="bgStars"></div>
+  <div class="bg-glow-1"></div>
+  <div class="bg-glow-2"></div>
+  <div class="bg-glow-3"></div>
+</div>
+
+<nav>
+  <a class="nav-logo" href="#">
+    <span class="logo-frog">🐸</span>
+    <span class="logo-pepe">PePe</span><span class="logo-on">on</span><span class="logo-tron">TRON</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#tokenomics">Tokenomics</a></li>
+    <li><a href="#listings">Listings</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#community">Community</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="nav-price-badge">
+      <span class="price-dot"></span>
+      PEPEONTRON $0.060
+    </div>
+    <button class="btn-nav-buy" onclick="openModal()">🐸 Buy Now</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-top-badges">
+    <div class="badge badge-binance">🟡 Binance Alpha Listed</div>
+    <div class="badge badge-mexc">✅ MEXC Innovation Zone</div>
+    <div class="badge badge-tron">🔴 Built on TRON</div>
+    <div class="badge badge-sunpump">🌞 SunPump Official</div>
+  </div>
+
+  <div class="hero-pepe-wrap">
+    <div class="hero-pepe-glow"></div>
+    <div class="hero-pepe-rings"></div>
+    <svg class="hero-pepe-svg" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="bodyG" cx="50%" cy="55%" r="50%">
+          <stop offset="0%" stop-color="#2e7d32"/>
+          <stop offset="100%" stop-color="#1b5e20"/>
+        </radialGradient>
+        <radialGradient id="bellyG" cx="50%" cy="40%" r="50%">
+          <stop offset="0%" stop-color="#66bb6a"/>
+          <stop offset="100%" stop-color="#43a047"/>
+        </radialGradient>
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+          <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <ellipse cx="110" cy="130" rx="80" ry="75" fill="url(#bodyG)" filter="url(#glow)"/>
+      <ellipse cx="110" cy="148" rx="58" ry="42" fill="url(#bellyG)"/>
+      <ellipse cx="80" cy="68" rx="22" ry="28" fill="#2e7d32"/>
+      <ellipse cx="140" cy="68" rx="22" ry="28" fill="#2e7d32"/>
+      <circle cx="80" cy="80" r="18" fill="white"/>
+      <circle cx="140" cy="80" r="18" fill="white"/>
+      <circle cx="83" cy="82" r="9" fill="#111"/>
+      <circle cx="143" cy="82" r="9" fill="#111"/>
+      <circle cx="86" cy="79" r="3" fill="white"/>
+      <circle cx="146" cy="79" r="3" fill="white"/>
+      <ellipse cx="95" cy="108" rx="12" ry="5" fill="#1b5e20"/>
+      <ellipse cx="125" cy="108" rx="12" ry="5" fill="#1b5e20"/>
+      <path d="M85 152 Q110 168 135 152" stroke="#1b5e20" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="110" cy="90" rx="15" ry="8" fill="#1b5e20" opacity="0.4"/>
+      <circle cx="98" cy="118" r="4" fill="#a5d6a7" opacity="0.5"/>
+      <circle cx="122" cy="122" r="3" fill="#a5d6a7" opacity="0.4"/>
+      <text x="92" y="175" font-family="Bangers,cursive" font-size="14" fill="#aeea00" letter-spacing="1" text-anchor="middle" filter="url(#glow)">TRX</text>
+      <text x="128" y="175" font-family="Bangers,cursive" font-size="14" fill="#00e676" letter-spacing="1" text-anchor="middle" filter="url(#glow)">🚀</text>
+    </svg>
+    <div class="hero-moon-badge">
+      <span class="icon">🌙</span>
+      <span class="txt">$10B<br>TARGET</span>
+    </div>
+    <div class="hero-binance-badge">
+      <span class="label">Listed On</span>
+      <div class="val">🟡 Binance Alpha</div>
+    </div>
+  </div>
+
+  <h1 class="hero-title">
+    <span class="ht-pepe">PEPE</span>
+    <span class="ht-on">is now</span>
+    <span class="ht-tron">ON TRON</span>
+  </h1>
+
+  <p class="hero-desc">
+    The <strong>biggest Pepe meme coin on TRON</strong>. Listed on Binance Alpha & MEXC.<br>
+    Fast. Cheap. Community-owned. <strong>No rug. Just vibes & gains.</strong> 🐸
+  </p>
+
+  <div class="hero-live-stats">
+    <div class="hls-item">
+      <div class="hls-val" id="livePrice">$0.0600</div>
+      <div class="hls-label">Live Price</div>
+    </div>
+    <div class="hls-item">
+      <div class="hls-val">$60M+</div>
+      <div class="hls-label">Market Cap</div>
+    </div>
+    <div class="hls-item">
+      <div class="hls-val">$3.4M</div>
+      <div class="hls-label">24h Volume</div>
+    </div>
+    <div class="hls-item">
+      <div class="hls-val">1B</div>
+      <div class="hls-label">Total Supply</div>
+    </div>
+  </div>
+
+  <div class="hero-cta-group">
+    <button class="btn-connect-big" onclick="openModal()">
+      <span>🐸 Connect Wallet & Buy PEPEONTRON</span>
+    </button>
+    <button class="btn-swap" onclick="openModal()">
+      <span>🔄 Swap on SunSwap</span>
+      <span style="font-size:0.85rem;font-family:'Space Mono',monospace;">→ TRX → PEPEONTRON</span>
+    </button>
+  </div>
+
+  <div class="hero-trust-row">
+    <div class="htr-item"><span class="htr-icon">🔒</span>No Rug Pull</div>
+    <div class="htr-item"><span class="htr-icon">✅</span>Audited Contract</div>
+    <div class="htr-item"><span class="htr-icon">⚡</span>0.001 TRX Fees</div>
+    <div class="htr-item"><span class="htr-icon">🌞</span>SunPump Official</div>
+    <div class="htr-item"><span class="htr-icon">👥</span>100K+ Holders</div>
+  </div>
+</section>
+
+<div class="marquee-wrap">
+  <div class="marquee-track" id="marqueeTrack"></div>
+</div>
+
+<section class="why-section" id="why">
+  <div class="why-inner">
+    <div class="sec-head scroll-reveal">
+      <span class="sec-tag">// Why PePeonTron</span>
+      <h2 class="sec-title">This Frog <span class="g">Is Built Different</span> 🐸</h2>
+      <p class="sec-sub">Not just another meme. PePeonTron is the official Pepe voice of the TRON blockchain — backed by real exchange listings and a 100K+ community.</p>
+    </div>
+
+    <div class="why-grid scroll-reveal">
+      <div class="why-card">
+        <div class="wc-num">01</div>
+        <span class="wc-icon">🟡</span>
+        <div class="wc-title">Binance Alpha Listed</div>
+        <p class="wc-desc">First TRON Pepe meme coin to secure a Binance Alpha listing. Massive exposure, massive volume, massive gains potential.</p>
+        <span class="wc-highlight">+4% on listing day</span>
+      </div>
+      <div class="why-card">
+        <div class="wc-num">02</div>
+        <span class="wc-icon">⚡</span>
+        <div class="wc-title">TRON Speed & Cost</div>
+        <p class="wc-desc">TRON processes 7,000+ TPS with near-zero fees. Buy, sell and trade PEPEONTRON for fractions of a cent — unlike Ethereum Pepe.</p>
+        <span class="wc-highlight">~0.001 TRX per tx</span>
+      </div>
+      <div class="why-card">
+        <div class="wc-num">03</div>
+        <span class="wc-icon">🌙</span>
+        <div class="wc-title">$10B Target in Sight</div>
+        <p class="wc-desc">Analysts speculate PePeonTron could reach $10 billion market cap as TRON meme coin momentum accelerates. Current cap: just $60M.</p>
+        <span class="wc-highlight">166x to target</span>
+      </div>
+      <div class="why-card">
+        <div class="wc-num">04</div>
+        <span class="wc-icon">🌞</span>
+        <div class="wc-title">SunPump Native</div>
+        <p class="wc-desc">Launched via Justin Sun's SunPump — the official TRON meme launchpad. Part of the ecosystem that generated $1M+ in 11 days at launch.</p>
+        <span class="wc-highlight">Justin Sun backed ecosystem</span>
+      </div>
+      <div class="why-card">
+        <div class="wc-num">05</div>
+        <span class="wc-icon">🎯</span>
+        <div class="wc-title">MEXC Innovation Zone</div>
+        <p class="wc-desc">Listed on MEXC Innovation Zone alongside the Binance Alpha listing. Double Tier-1 exposure for maximum reach and liquidity.</p>
+        <span class="wc-highlight">Dual Tier-1 listing</span>
+      </div>
+      <div class="why-card">
+        <div class="wc-num">06</div>
+        <span class="wc-icon">🐸</span>
+        <div class="wc-title">Pepe IP Power</div>
+        <p class="wc-desc">Pepe the Frog is the #1 meme in crypto. PEPE on Ethereum hit $8B market cap. PePeonTron brings that same energy to TRON — at 1/100th the price.</p>
+        <span class="wc-highlight">Same meme. Better chain.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tokenomics-section" id="tokenomics">
+  <div class="tokenomics-inner">
+    <div class="token-donut-wrap scroll-reveal">
+      <div class="donut-chart">
+        <svg class="donut-svg" viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="80" fill="none" stroke="#0a1a0a" stroke-width="32"/>
+          <circle cx="100" cy="100" r="80" fill="none" stroke="#00c853" stroke-width="32"
+            stroke-dasharray="251 251" stroke-dashoffset="0" stroke-linecap="butt"/>
+          <circle cx="100" cy="100" r="80" fill="none" stroke="#aeea00" stroke-width="32"
+            stroke-dasharray="75 427" stroke-dashoffset="-251" stroke-linecap="butt"/>
+          <circle cx="100" cy="100" r="80" fill="none" stroke="#ffd600" stroke-width="32"
+            stroke-dasharray="50 452" stroke-dashoffset="-326" stroke-linecap="butt"/>
+          <circle cx="100" cy="100" r="80" fill="none" stroke="#ff6d00" stroke-width="32"
+            stroke-dasharray="126 376" stroke-dashoffset="-376" stroke-linecap="butt"/>
+        </svg>
+        <div class="donut-center">
+          <div class="dc-icon">🐸</div>
+          <div class="dc-val">1B</div>
+          <div class="dc-label">TOTAL SUPPLY</div>
+        </div>
+      </div>
+      <div class="donut-legend">
+        <div class="dl-item"><div class="dl-dot" style="background:#00c853;"></div><span class="dl-name">Liquidity</span><span class="dl-pct">50%</span></div>
+        <div class="dl-item"><div class="dl-dot" style="background:#aeea00;"></div><span class="dl-name">Community</span><span class="dl-pct">15%</span></div>
+        <div class="dl-item"><div class="dl-dot" style="background:#ffd600;"></div><span class="dl-name">Ecosystem</span><span class="dl-pct">10%</span></div>
+        <div class="dl-item"><div class="dl-dot" style="background:#ff6d00;"></div><span class="dl-name">Marketing</span><span class="dl-pct">25%</span></div>
+      </div>
+    </div>
+
+    <div class="token-info scroll-reveal">
+      <span class="sec-tag">// Tokenomics</span>
+      <h2 class="sec-title">Clean. <span class="g">Simple.</span> Fair. 🐸</h2>
+      <p class="sec-sub" style="margin:0 0 24px;max-width:none;">No team tokens. No vesting cliffs. Pure community ownership — the way Pepe was always meant to be.</p>
+
+      <div class="token-info-rows">
+        <div class="tir">
+          <span class="tir-label">Token Name</span>
+          <span class="tir-val green">PePeonTron</span>
+        </div>
+        <div class="tir">
+          <span class="tir-label">Ticker</span>
+          <span class="tir-val green">PEPEONTRON</span>
+        </div>
+        <div class="tir">
+          <span class="tir-label">Total Supply</span>
+          <span class="tir-val">1,000,000,000</span>
+        </div>
+        <div class="tir">
+          <span class="tir-label">Blockchain</span>
+          <span class="tir-val">TRON (TRC-20)</span>
+        </div>
+        <div class="tir">
+          <span class="tir-label">Market Cap</span>
+          <span class="tir-val green">~$60M</span>
+        </div>
+        <div class="tir">
+          <span class="tir-label">ATH Price</span>
+          <span class="tir-val yellow">$0.0903 (Jul 2025)</span>
+        </div>
+        <div class="tir">
+          <span class="tir-label">Tax</span>
+          <span class="tir-val green">0% Buy / 0% Sell</span>
+        </div>
+        <div class="tir">
+          <span class="tir-label">Listed On</span>
+          <span class="tir-val">Binance Alpha · MEXC · LBank</span>
+        </div>
+      </div>
+
+      <div class="contract-box">
+        <div style="flex:1;">
+          <span class="contract-label">TRC-20 Contract</span>
+          <div class="contract-addr">TronScan: PEPEONTRON · Official TRC-20 Token</div>
+        </div>
+        <button class="copy-btn" onclick="this.textContent='✓'">📋</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="listings-section" id="listings">
+  <div class="listings-inner">
+    <div class="sec-head scroll-reveal">
+      <span class="sec-tag">// Where to Buy</span>
+      <h2 class="sec-title">Get <span class="g">PEPEONTRON</span> Now 🐸</h2>
+      <p class="sec-sub">Available on top exchanges and DEXs. Connect your wallet and buy in under 60 seconds.</p>
+    </div>
+
+    <div class="listings-grid scroll-reveal">
+      <div class="listing-card lc-binance" onclick="openModal()">
+        <span class="lc-logo">🟡</span>
+        <div class="lc-name">Binance Alpha</div>
+        <div class="lc-type">CEX · Tier 1</div>
+        <span class="lc-badge badge-live-y">✅ Live Now</span>
+      </div>
+      <div class="listing-card lc-mexc" onclick="openModal()">
+        <span class="lc-logo">🅜</span>
+        <div class="lc-name">MEXC</div>
+        <div class="lc-type">Innovation Zone · CEX</div>
+        <span class="lc-badge badge-live-g">✅ Live Now</span>
+      </div>
+      <div class="listing-card lc-lbank" onclick="openModal()">
+        <span class="lc-logo">🔵</span>
+        <div class="lc-name">LBank</div>
+        <div class="lc-type">CEX · Global</div>
+        <span class="lc-badge badge-live-b">✅ Live Now</span>
+      </div>
+      <div class="listing-card lc-sunswap" onclick="openModal()">
+        <span class="lc-logo">🌞</span>
+        <div class="lc-name">SunSwap</div>
+        <div class="lc-type">DEX · TRON Native</div>
+        <span class="lc-badge badge-live-g">✅ Live Now</span>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:48px;" class="scroll-reveal">
+      <button class="btn-cta-main" onclick="openModal()" style="margin:0 auto;display:inline-flex;">
+        <span>🐸 Connect Wallet to Swap</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="roadmap-section" id="roadmap">
+  <div class="roadmap-inner">
+    <div class="sec-head scroll-reveal">
+      <span class="sec-tag">// Roadmap</span>
+      <h2 class="sec-title">The Road to <span class="g">$10B</span> 🚀</h2>
+      <p class="sec-sub">Every milestone checked. The mission: make PEPEONTRON the most legendary meme coin on TRON.</p>
+    </div>
+
+    <div class="rm-track scroll-reveal">
+      <div class="rm-item">
+        <div class="rm-node rm-node-done">🐸</div>
+        <div class="rm-phase done">Phase 1 · Done</div>
+        <div class="rm-title">SunPump Launch</div>
+        <p class="rm-desc">Fair launch on SunPump. Community formation. First viral push on X & Telegram.</p>
+      </div>
+      <div class="rm-item">
+        <div class="rm-node rm-node-done">🟡</div>
+        <div class="rm-phase done">Phase 2 · Done</div>
+        <div class="rm-title">Binance Alpha + MEXC</div>
+        <p class="rm-desc">Secured dual Tier-1 listings. Volume surged +99.89%. $60M market cap crossed.</p>
+      </div>
+      <div class="rm-item">
+        <div class="rm-node rm-node-active">🔥</div>
+        <div class="rm-phase active">Phase 3 · Active</div>
+        <div class="rm-title">Tier-1 CEX Expansion</div>
+        <p class="rm-desc">Target full Binance spot, Bybit, OKX listings. CEX integrations, market makers. 500K holders target.</p>
+      </div>
+      <div class="rm-item">
+        <div class="rm-node rm-node-upcoming">🌙</div>
+        <div class="rm-phase upcoming">Phase 4 · Soon™</div>
+        <div class="rm-title">$10B Valuation</div>
+        <p class="rm-desc">PEPE on ETH hit $8B. PePeonTron targets $10B as the dominant Pepe on TRON. 🐸🚀🌙</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="community-section" id="community">
+  <div class="community-inner">
+    <div class="sec-head scroll-reveal">
+      <span class="sec-tag">// Community</span>
+      <h2 class="sec-title">The Frog <span class="g">Army</span> 🐸💚</h2>
+      <p class="sec-sub">Join 100K+ Pepe believers on TRON. The strongest meme community in the game.</p>
+    </div>
+
+    <div class="social-grid scroll-reveal">
+      <a class="social-card" href="#" onclick="return false;">
+        <span class="sc-icon">𝕏</span>
+        <div class="sc-name">Twitter / X</div>
+        <div class="sc-followers">@PePeonTron · 45K+ Followers</div>
+      </a>
+      <a class="social-card" href="#" onclick="return false;">
+        <span class="sc-icon">✈</span>
+        <div class="sc-name">Telegram</div>
+        <div class="sc-followers">PePeonTron Chat · 80K+ Members</div>
+      </a>
+      <a class="social-card" href="#" onclick="return false;">
+        <span class="sc-icon">💬</span>
+        <div class="sc-name">Discord</div>
+        <div class="sc-followers">Frog Army HQ · 25K+ Members</div>
+      </a>
+      <a class="social-card" href="#" onclick="return false;">
+        <span class="sc-icon">🔍</span>
+        <div class="sc-name">TronScan</div>
+        <div class="sc-followers">Verify Contract On-Chain</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="cta-bg-frog">🐸</div>
+  <span class="cta-label scroll-reveal">🚀 Limited Window — Get in Before $10B</span>
+  <h2 class="cta-title scroll-reveal">
+    <span class="line1">ARE YOU</span>
+    <span class="line2">GONNA MAKE IT? 🐸</span>
+  </h2>
+  <p class="cta-sub scroll-reveal">
+    PEPE hit $8 billion on ETH. PePeonTron is at $60M on TRON.<br>
+    The math is simple. The frog is ready. Are you?
+  </p>
+  <div class="cta-btns scroll-reveal">
+    <button class="btn-cta-main" onclick="openModal()">
+      <span>🐸 Connect Wallet & Buy</span>
+    </button>
+    <button class="btn-cta-sec" onclick="openModal()">
+      <span>🌞 Swap on SunSwap</span>
+    </button>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <a class="footer-logo-row" href="#">
+        <span style="font-size:1.8rem;">🐸</span>
+        <span class="logo-pepe">PePe</span><span class="logo-on" style="font-size:1rem;">on</span><span class="logo-tron">TRON</span>
+      </a>
+      <p class="footer-desc">PePeonTron — the official Pepe meme coin of the TRON blockchain. Listed on Binance Alpha & MEXC. Built on SunPump. Community owned.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Token</div>
+      <ul class="footer-links">
+        <li><a href="#">Tokenomics</a></li>
+        <li><a href="#">Contract</a></li>
+        <li><a href="#">Audit Report</a></li>
+        <li><a href="#">TronScan</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Trade</div>
+      <ul class="footer-links">
+        <li><a href="#">Binance Alpha</a></li>
+        <li><a href="#">MEXC</a></li>
+        <li><a href="#">LBank</a></li>
+        <li><a href="#">SunSwap DEX</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Community</div>
+      <ul class="footer-links">
+        <li><a href="#">Twitter / X</a></li>
+        <li><a href="#">Telegram</a></li>
+        <li><a href="#">Discord</a></li>
+        <li><a href="#">Medium</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 PePeonTron (PEPEONTRON) · TRC-20 · Built on TRON · All Rights Reserved</div>
+    <div class="footer-socials">
+      <a class="fsoc" href="#" title="Twitter">𝕏</a>
+      <a class="fsoc" href="#" title="Telegram">✈</a>
+      <a class="fsoc" href="#" title="Discord">◈</a>
+      <a class="fsoc" href="#" title="TronScan">🔍</a>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay" onclick="handleOverlay(event)">
+  <div class="modal">
+    <div class="modal-top">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-frog-row">
+        <span class="modal-frog">🐸</span>
+        <div>
+          <div class="modal-title">Connect Wallet</div>
+          <div class="modal-subtitle">PePeonTron · PEPEONTRON · TRON Network</div>
+        </div>
+      </div>
+      <div class="modal-reward">
+        <span class="mr-icon">🎁</span>
+        Connect now and join 100,000+ Pepe holders on TRON. No KYC. No email. Just vibes.
+      </div>
+    </div>
+    <div class="modal-wallets">
+      <div class="modal-wallet" onclick="connectWallet('TronLink')">
+        <div class="mw-left">
+          <div class="mw-icon">🦊</div>
+          <div>
+            <div class="mw-name">TronLink</div>
+            <div class="mw-type">Official TRON Wallet · Recommended</div>
+          </div>
+        </div>
+        <div class="mw-arrow">→</div>
+      </div>
+      <div class="modal-wallet" onclick="connectWallet('WalletConnect')">
+        <div class="mw-left">
+          <div class="mw-icon">🌀</div>
+          <div>
+            <div class="mw-name">WalletConnect</div>
+            <div class="mw-type">Scan QR · Any Mobile Wallet</div>
+          </div>
+        </div>
+        <div class="mw-arrow">→</div>
+      </div>
+      <div class="modal-wallet" onclick="connectWallet('TokenPocket')">
+        <div class="mw-left">
+          <div class="mw-icon">💎</div>
+          <div>
+            <div class="mw-name">TokenPocket</div>
+            <div class="mw-type">Multi-Chain · TRON Supported</div>
+          </div>
+        </div>
+        <div class="mw-arrow">→</div>
+      </div>
+      <div class="modal-wallet" onclick="connectWallet('Bitget Wallet')">
+        <div class="mw-left">
+          <div class="mw-icon">🔷</div>
+          <div>
+            <div class="mw-name">Bitget Wallet</div>
+            <div class="mw-type">Web3 · TRON Native</div>
+          </div>
+        </div>
+        <div class="mw-arrow">→</div>
+      </div>
+      <div class="modal-wallet" onclick="connectWallet('Trust Wallet')">
+        <div class="mw-left">
+          <div class="mw-icon">🔵</div>
+          <div>
+            <div class="mw-name">Trust Wallet</div>
+            <div class="mw-type">Mobile · TRON Supported</div>
+          </div>
+        </div>
+        <div class="mw-arrow">→</div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      🔒 Your keys, your crypto. No custody. No KYC. Contract verified on TronScan.<br>
+      <span style="color:rgba(100,140,100,0.5);">DYOR — Not financial advice. Meme coins are high-risk assets.</span>
+    </div>
+  </div>
+</div>
+
+<script>
+const starsEl = document.getElementById('bgStars');
+for (let i = 0; i < 150; i++) {
+  const s = document.createElement('div');
+  const size = Math.random() * 2.5 + 0.5;
+  s.style.cssText = `
+    position:absolute;
+    width:${size}px; height:${size}px;
+    top:${Math.random()*100}%; left:${Math.random()*100}%;
+    border-radius:50%; background:white;
+    opacity:${Math.random()*0.3+0.05};
+    animation:twinkle ${Math.random()*3+2}s ease-in-out infinite;
+    animation-delay:${Math.random()*-3}s;
+  `;
+  starsEl.appendChild(s);
+}
+
+const style = document.createElement('style');
+style.textContent = `@keyframes twinkle{0%,100%{opacity:var(--o,0.1);}50%{opacity:calc(var(--o,0.1)*3);}}`;
+document.head.appendChild(style);
+
+const greenChars = '🐸$PEPE TRON🚀🌙💚 WAGMI';
+for (let i = 0; i < 20; i++) {
+  const c = document.createElement('div');
+  c.className = 'rain-char';
+  c.textContent = greenChars[Math.floor(Math.random()*greenChars.length)];
+  c.style.cssText = `
+    left:${Math.random()*100}%;
+    animation-duration:${Math.random()*8+6}s;
+    animation-delay:${Math.random()*-10}s;
+    opacity:0;
+  `;
+  document.querySelector('.bg-layer').appendChild(c);
+}
+
+const marqueeItems = [
+  '🐸 PEPEONTRON', '🟡 BINANCE ALPHA', '🚀 TO THE MOON', '💚 TRON ECOSYSTEM',
+  '🌞 SUNPUMP', '$10B TARGET', '⚡ FAST FEES', '🐸 WAGMI', '🔥 100K HOLDERS',
+  'MEXC LISTED', '🌙 NGMI IF YOU MISS', '🐸 PEPEONTRON',
+];
+const mt = document.getElementById('marqueeTrack');
+const items = [...marqueeItems, ...marqueeItems].map(t =>
+  `<div class="marquee-item"><span class="frog">🐸</span>${t}</div>`
+).join('');
+mt.innerHTML = items + items;
+
+let price = 0.0600;
+let dir = 1;
+setInterval(() => {
+  const change = (Math.random() * 0.0004 - 0.0001) * dir;
+  price = Math.max(0.055, Math.min(0.065, price + change));
+  if (Math.random() < 0.05) dir *= -1;
+  document.getElementById('livePrice').textContent = '$' + price.toFixed(4);
+}, 2000);
+
+function openModal() {
+  document.getElementById('modalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  document.getElementById('modalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function handleOverlay(e) {
+  if (e.target === document.getElementById('modalOverlay')) closeModal();
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+function connectWallet(name) {
+  closeModal();
+  document.querySelector('.btn-nav-buy').textContent = '🐸 ' + name.slice(0,8) + '...';
+  document.querySelector('.btn-connect-big span').textContent = '✅ Connected! Swap Now → PEPEONTRON';
+}
+
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.scroll-reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
